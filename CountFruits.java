@@ -14,7 +14,6 @@ public class CountFruits {
         "Fig", "Blueberry", "Grape", "Jackfruit", "Pomegranate", "Apple", "Pear", "Orange", "Watermelon", "Raspberry", "Banana"};
        
 
-
         firstCharacters(fruits);
 
     }
@@ -42,13 +41,25 @@ public class CountFruits {
             
         }
 
+        StringBuilder builder = new StringBuilder();
         for(int i = 0; i<frequency.length; i++){
+            builder.delete(0, builder.length());
             char c = (char)(i + 'A');
-            System.out.println(""+c+":"+frequency[i]);
+            builder.append(c);
+            builder.append(':');
+            builder.append(' ');
+            builder.append(frequency[i]);
             
+            System.out.println(builder.toString());
+            
+            builder.delete(0, builder.length());
             Set<String> list = charFruitMap.getOrDefault(c,new HashSet<>());
             for(String fruit : list){
-                System.out.println(""+fruitCount.get(fruit)+":"+fruit);
+                builder.delete(0, builder.length());
+                builder.append(fruitCount.get(fruit));
+                builder.append(' ');
+                builder.append(fruit);
+                System.out.println(builder.toString());
             }
 
             System.out.println();
