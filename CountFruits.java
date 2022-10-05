@@ -6,15 +6,13 @@ import java.util.Set;
 /**
  * AndelaJavaTest
  */
-public class AndelaJavaTest {
+public class CountFruits {
 
     public static void main(String[] args) {
 
         String[] fruits = {"Strawberry", "Mango", "Cherry", "Lime", "Guava", "Papaya", "Nectarine", "Pineapple", "Lemon", "Plum", "Tangerine",
         "Fig", "Blueberry", "Grape", "Jackfruit", "Pomegranate", "Apple", "Pear", "Orange", "Watermelon", "Raspberry", "Banana"};
-        //firstCharacters(new String[]{"Apple", "Apricot", "Cherry", "Banana", "Cherry", "Papaya", "Cantaloupe"});
-
-        //firstCharacters(new String[]{"", "", ""});
+       
 
 
         firstCharacters(fruits);
