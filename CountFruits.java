@@ -10,7 +10,7 @@ public class CountFruits {
 
     public static void main(String[] args) {
 
-        String[] fruits = {"Strawberry", "Mango", "Cherry", "Lime", "Guava", "Papaya", "Nectarine", "Pineapple", "Lemon", "Plum", "Tangerine",
+        String[] fruits = {"Strawberry","Mango", "Cherry", "Lime", "Guava", "Papaya", "Nectarine", "Pineapple", "Lemon", "Plum", "Tangerine",
         "Fig", "Blueberry", "Grape", "Jackfruit", "Pomegranate", "Apple", "Pear", "Orange", "Watermelon", "Raspberry", "Banana"};
        
 
@@ -57,11 +57,6 @@ public class CountFruits {
             
             builder.delete(0, builder.length());
             LinkedHashSet<String> list = charFruitMap.getOrDefault(c,new LinkedHashSet<>());
-            //Arrays.sort(words,(a,b) -> a.compareTo(b));
-
-            // List<String> fruitList = new ArrayList<>(list);
-
-            // Collections.sort(fruitList, (a,b) -> a.compareToIgnoreCase(b));
 
             for(String fruit : list){
                 builder.delete(0, builder.length());
